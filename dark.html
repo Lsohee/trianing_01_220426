@@ -24,17 +24,22 @@
 
     clickBtn,addEventListener("click", function() {
       // console.log("hello")
-
+      
       // console.log(root.style.backgroundColor);
       if(data === true){
         console.log("data 값은"+ data);
+        root.textContent = "day"
         data = false;
-      }else {//data !== true data===false 
+        root.style.backgroundColor= "salmon"
+        root.style.transition = "1s"
+      }else {//data !== true / data===false 
         console.log("data 값은"+ data);
+        root.style.backgroundColor= "darkBlue"
         data = true;
+        root.textContent = "night"
+        root.style.transition = "0.5s"
+
       }
-      
-      
     });
     
     

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- 자바스크립트로 변환할 때 보기 편하라고 내부 스타일 시트로 시도  -->
+  <!-- 근데 scss로 안하니까 불편하다 -->
+  <style>
+    *{
+      padding :0;
+      margin:0;
+      box-sizing: border-box;
+    }
+    #root div{
+      border:1px solid black;
+    }
+
+    #root{
+      width:100vw;
+      height:100vh;
+      background-color: antiquewhite;
+      display: grid;
+      grid-template-columns: 25vw 25vw;
+      
+    }
+    #root>div:nth-child(1){
+      background-color: salmon;
+      width:25vw;
+      height:25vw;
+    }
+    #root>div:nth-child(2){
+      width:25vw;
+      height:25vw;
+    }
+/* grid를 써보려고 했는데 어렵다. grid를 더 연습할 것 */
+
+
+    #root >div:nth-child(2)>div:nth-child(){
+      
+    }
+    #root >div:nth-child(2)>div{
+      width:50px;
+      height:50px;
+  }
+  </style>
+  
+</head>
+<body>
+
+    <div id="root">
+      <div></div>
+      <div>
+        <div></div>
+        <div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+      
+      
+
+    
+    
+  </div>
+
+</body>
+</html>
